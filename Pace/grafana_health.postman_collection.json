@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-4a5b-bc6d-7e8f9a0b1c2d",
+		"name": "Grafana Health API",
+		"description": "Postman collection to check Grafana's health endpoint.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Check Grafana Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{grafana_url}}/api/health",
+					"host": [
+						"{{grafana_url}}"
+					],
+					"path": [
+						"api",
+						"health"
+					]
+				},
+				"description": "Returns the health status of the Grafana instance. This endpoint does not require authentication."
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "grafana_url",
+			"value": "http://localhost:3000",
+			"type": "string"
+		}
+	]
+}
