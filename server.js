@@ -19,7 +19,7 @@ app.use(cors({
     credentials: true,
 }));
 
-// Connect DB
+// This is Connect DB block
 mongoose.connect(process.env.MONGODB_URL)
     .then(() => console.log('Database connected'))
     .catch((err) => {
