@@ -43,5 +43,5 @@ const PORT = process.env.PORT || 8000;
 if (require.main === module) {
     app.listen(PORT, () => console.log(`Server running on :${PORT}`));
 }
-
+// Export the app for testing purposes
 module.exports = app;
