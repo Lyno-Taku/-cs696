@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGODB_URL)
 // Routes
 app.use('/api/auth', authRoutes);
 
-// Central error handler
+// Central error handling code (for all routes)
 app.use((err, req, res, next) => {
     console.error(err);
     const status = err.status || 500;
