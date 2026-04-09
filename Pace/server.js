@@ -19,7 +19,7 @@ app.use(cors({
     credentials: true,
 }));
 
-// Connect DB
+// This is Connect DB block
 mongoose.connect(process.env.MONGODB_URL)
     .then(() => console.log('Database connected'))
     .catch((err) => {
@@ -30,7 +30,7 @@ mongoose.connect(process.env.MONGODB_URL)
 // Routes
 app.use('/api/auth', authRoutes);
 
-// Central error handler
+// Central error handling code (for all routes)
 app.use((err, req, res, next) => {
     console.error(err);
     const status = err.status || 500;
@@ -43,5 +43,5 @@ const PORT = process.env.PORT || 8000;
 if (require.main === module) {
     app.listen(PORT, () => console.log(`Server running on :${PORT}`));
 }
-
+// Export the app for testing purposes
 module.exports = app;
