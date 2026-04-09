@@ -1,1 +1,1 @@
-This is a README file for the project. This is the updated file.
+This is a README file for the project. This is the updated project.
