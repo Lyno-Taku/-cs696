@@ -1,2 +1,3 @@
-This is a README file for the project. These are the updated project files.
+This is a README file for the project. 
+This is the updated project files.
 After house keeping.
